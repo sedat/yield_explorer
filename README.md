@@ -1,8 +1,8 @@
 # Introduction
 
-## Yield explorer is a WIP project!
+## Yield explorer is a WIP!
 
-I needed a tool that would show me historical data and performance of my staked crypto but was unable to find a tool that I liked. I was finding my self going to (yieldwatch)[https://yieldwatch.net/]
+I needed a tool that would show me historical data and performance of my staked crypto but was unable to find a tool that I liked. I was finding my self going to [yieldwatch](https://yieldwatch.net/)
 a couple of times during the day and this wasn't cool because it was only showing me information on my stake at that particular time. There wasn't any historical data that would be charted, analyzed
 , or show the increase/decrease of the performance in percentage in daily-weekly times etc. I thought that rather than going to yieldwatch every hour or so, let me write a code to automate this.
 Not only it would show me what's up with my investment at a particular time. It would save the data in the database so that I can have historical data on my investment as well.
