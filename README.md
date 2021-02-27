@@ -23,3 +23,9 @@ export PROVIDER=<provider>
 ```
 Options for provider, currently supporting only one provider at a time.
 "Acryptos", "Autofarm", "StreetSwap", "PancakeSwap", "BeefyFinance", "Jetfuel", "CreamFinance", "Venus", "bDollar"
+
+Install the required dependencies such as `requests, schedule` etc.
+
+Run the `database.py` script to initialize the `yield_db`(create this before) database.
+You can then run the `yield_explorer.py` script's `main` method to get the current information on your investment. This will print out the information and also save it in the database.
+If you like to you can run a cron job every hour using the `cron.py` script. I use pm2 tool to run my processes automatically in my server.
