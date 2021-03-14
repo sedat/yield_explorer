@@ -103,7 +103,7 @@ def main():
                 print("Total USD value: " +
                       "{:.2f}".format(stake['depositedTokens'] * stake['priceInUSDDepositToken']))
                 print("Total yield: " + "{:.2f}".format(
-                    (stake['harvestedRewards'] + stake['pendingRewards']) * stake['priceInUSDRewardToken']))
+                    (stake['currentTokens'] - stake['depositedTokens']) * stake['priceInUSDDepositToken']))
                 sql = "INSERT INTO yield_history (pool, token_amount, token_price, deposit, yield) VALUES (%s, %s, %s, %s, %s)"
                 cursor.execute(sql, (stake['depositToken'], stake['depositedTokens'], stake['priceInUSDDepositToken'], (stake['depositedTokens']
                                                                                                                         * stake['priceInUSDDepositToken']), ((stake['harvestedRewards'] + stake['pendingRewards']) * stake['priceInUSDRewardToken'])))
@@ -116,7 +116,7 @@ def main():
                 print("{:.2f}".format(
                     stake['LPInfo']['currentToken0'] * stake['LPInfo']['priceInUSDToken0'] + stake['LPInfo']['currentToken1'] * stake['LPInfo']['priceInUSDToken1']) + "USD - " + stake['name'] + " deposited")
                 print(
-                    "Total yield: " + "{:.2f}".format(stake['totalRewards'] * stake['priceInUSDRewardToken']))
+                    "Total yield: " + "{:.2f}".format((stake['currentTokens'] - stake['depositedTokens']) * stake['priceInUSDDepositToken']))
                 sql = "INSERT INTO lp_yield_history (pool, first_token_amount, second_token_amount, first_token_price, second_token_price, deposit, yield) VALUES (%s, %s, %s, %s, %s, %s, %s)"
                 cursor.execute(sql, (stake['name'], stake['LPInfo']['currentToken0'], stake['LPInfo']['currentToken1'], stake['LPInfo']['priceInUSDToken0'], stake['LPInfo']['priceInUSDToken1'], (stake['LPInfo']['currentToken0'] * stake['LPInfo']['priceInUSDToken0'] +
                                                                                                                                                                                                    stake['LPInfo']['currentToken1'] * stake['LPInfo']['priceInUSDToken1']), (stake['totalRewards'] * stake['priceInUSDRewardToken'])))
@@ -130,3 +130,6 @@ def main():
               "{:.2f}".format(lp_staked['total'] + staked['total']))
         print("Total yield: " +
               "{:.2f}".format(lp_staked['yield'] + staked['yield']))
+
+
+main()
