@@ -10,7 +10,7 @@ Please feel free to use this. But don't send many requests because that wouldn't
 
 ## What to come
 
-I'm thinking about adding a frontend to the project that would automatically fetch the current data from the database and show it to me in charts and other visual forms. Like a portfolio.
+I'm thinking about adding a frontend to the project that would automatically fetch the current data from the database and show it to me in charts and other visual forms. Like a portfolio. Also currently only Autofarm and PancakeSwap are tested. If you use any of the other providers below and it's not working correctly, let me know.
 
 ## How to use
 
@@ -21,7 +21,7 @@ export WALLET_ADDRESS=<crypto wallet address>
 export DEPOSIT=300 (as in 300 dollars, every time you buy more you should update this to figure out if you're losing or not)
 export PROVIDER=<provider>
 ```
-Options for provider, currently supporting only one provider at a time.
+Options for provider, currently supporting only one provider at a time. If you use multiple providers, run the script for each of them.
 "Acryptos", "Autofarm", "StreetSwap", "PancakeSwap", "BeefyFinance", "Jetfuel", "CreamFinance", "Venus", "bDollar"
 
 Install the required dependencies such as `requests, schedule` etc.
