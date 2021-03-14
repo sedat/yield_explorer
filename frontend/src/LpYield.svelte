@@ -35,5 +35,5 @@
 </script>
 
 <main>
-  <canvas id="lp" width="600" height="400" />
+  <canvas id="lp" width="700" height="500" />
 </main>

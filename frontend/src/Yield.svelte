@@ -39,5 +39,5 @@
 </script>
 
 <main>
-  <canvas id="yield" width="600" height="400" />
+  <canvas id="yield" width="700" height="500" />
 </main>
