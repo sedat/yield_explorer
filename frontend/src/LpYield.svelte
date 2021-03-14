@@ -22,7 +22,7 @@
             data: lp
               .filter((item) => item.pool === pool)
               .map((item) => item.deposit),
-            backgroundColor: colors.pop(),
+            borderColor: colors.pop(),
             fill: false,
           };
         }),
