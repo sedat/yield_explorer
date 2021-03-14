@@ -2,7 +2,7 @@ import schedule
 import time
 from yield_explorer import main
 
-schedule.every(5).seconds.do(main)
+schedule.every().hour.do(main)
 
 while 1:
     n = schedule.idle_seconds()
