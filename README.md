@@ -34,8 +34,8 @@ If you like to you can run a cron job every hour using the `cron.py` script. I u
 
 To run the frontend application you need to run both the server that takes the data from the database and the frontend application itself.
 
-First you need to have `nodejs` and `npm` available in your system. You can look at it online. They're easily to download.
-First, go to the `backend` folder and run the command `npm install` to download all dependencies, after this change the mysql name and password in `app.js` according to your system. Now you can run `npm run start` to start your server.
+First you need to have `nodejs` and `npm` available in your system. You can look at it online.
+First, go to the `backend` folder and run the command `npm install` to download all dependencies. After this change the mysql name and password in `app.js` according to your mysql credentials. Now you can run `npm run start` to start your server.
 
 After starting your server go to the `frontend` folder. Like last time run the command `npm install`. After installing the dependencies you can run the command 
 `npm run dev`. This command will open the frontend application in `http://localhost:5000/`. Use your browser to go to this URL and your graphs will be there.
