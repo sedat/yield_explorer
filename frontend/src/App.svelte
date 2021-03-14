@@ -4,9 +4,13 @@
 </script>
 
 <main>
+  <h2>
+    Made by <a href="https://github.com/sedat">Sedat.</a> If you'd like to tip me
+    for my work my BSC wallet address: 0x878BC5bC7cBc369dffC00cdc6e1718478dc1D639
+  </h2>
   <div id="flex">
-    <Yield id="canvas" />
-    <LpYield id="canvas" />
+    <Yield />
+    <LpYield />
   </div>
 </main>
 
