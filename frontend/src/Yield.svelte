@@ -33,6 +33,10 @@
       },
       options: {
         responsive: false,
+        title: {
+          display: true,
+          text: "Stake Pool Graph",
+        },
       },
     });
   });

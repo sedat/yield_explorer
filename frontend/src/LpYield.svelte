@@ -29,6 +29,10 @@
       },
       options: {
         responsive: false,
+        title: {
+          display: true,
+          text: "Liquidity Pool Graph",
+        },
       },
     });
   });
