@@ -128,5 +128,3 @@ def main():
         print("Total yield: " +
               "{:.2f}".format(lp_staked['yield'] + staked['yield']))
 
-
-main()
