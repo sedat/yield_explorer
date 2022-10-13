@@ -1,6 +1,6 @@
 # Introduction
 
-## Yield explorer is a WIP!
+## Yield explorer isn't usable anymore because of a critical API change thank you for trying it out!
 
 I needed a tool that would show me historical data and performance of my staked crypto but was unable to find a tool that I liked. I was finding my self going to [yieldwatch](https://yieldwatch.net/)
 a couple of times during the day and this wasn't cool because it was only showing me information on my stake at that particular time. There wasn't any historical data that would be charted, analyzed
